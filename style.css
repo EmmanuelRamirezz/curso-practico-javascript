@@ -134,6 +134,56 @@ button:nth-child(2){
   background-color: var(--orange);
   color: var(--white);
 }
+/* Seccion de descuentos */
+.main-discount__container h1{
+  color: var(--white);
+  text-align: center;
+  margin-top: 40px;
+}
+.main-discount__container{
+  display: flex;
+  flex-direction: column;
+}
+.regular-discount__container, .cupon-discount__container{
+  background-color: var(--light-purple);
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 50px;
+  height: 200px;
+  width: 68%;
+}
+.cupon-discount__container{
+  background-color: var(--light-blue);
+}
+#InputPrice, #InputDiscount, #InputPrice2, #InputCupon{
+  width: 80px;
+}
+.regular-discount__container h2, .cupon-discount__container h2{
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.regular-discount__container label, .cupon-discount__container label{
+  color: var(--white);
+  font-size: 1.3rem;
+}
+.regular-discount__container button{
+  margin-left: 20px;
+  background-color: var(--orange);
+  color: var(--white);
+  margin: 10px 20px;
+}
+.cupon-discount__container button{
+  color: var(--dark-blue);
+  background-color: var(--yellow);
+  margin: 10px 20px;
+}
+.discount__result{
+  color: var(--white);
+  font-size: 1.5rem;
+  text-align: center;
+}
 @media(max-width: 900px){
   .nav__bar{
     display: none;
@@ -155,6 +205,19 @@ button:nth-child(2){
   }
   .nav__container{
     margin-left: 20px;
+  }
+  .regular-discount__container, .cupon-discount__container{
+    margin: 20px auto;
+    height: 280px;
+  }
+}
+@media (max-width: 480px){
+  .regular-discount__container, .cupon-discount__container{
+    height: 300px;
+  }
+  #InputPrice, #InputDiscount, #InputPrice2, #InputCupon{
+    width: 150px;
+    margin: 5 px;
   }
 }
 

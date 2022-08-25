@@ -43,7 +43,7 @@ function onClickButton(){
   const precioConDescuento = calcularPrecioConDescuento(priceValue, discountValue)
   const ResultP = document.getElementById("ResultP");
 
-  ResultP.innerText = "El precio con descuento es: $"+ precioConDescuento;
+  ResultP.innerText = "Total: $"+ precioConDescuento;
 }
 
 function onClickButton2(){
@@ -56,7 +56,7 @@ function onClickButton2(){
   const cuponTotal = calcularCupon(priceValue2, cuponValue)
   const ResultP2 = document.getElementById("ResultP2");
 
-  ResultP2.innerText = "El precio con descuento es: $"+ cuponTotal;
+  ResultP2.innerText = "Total: $"+ cuponTotal;
 
   console.log(priceValue2, cuponValue);
 }
