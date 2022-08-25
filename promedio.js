@@ -25,7 +25,7 @@ function CalcularMedia(lista){
       return valorAcumulado+nuevoElemento;
     }
   );
- 
+    
   return sumarLista/lista.length;
 }
 
