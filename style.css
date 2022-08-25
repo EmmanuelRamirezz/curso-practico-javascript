@@ -1,39 +1,126 @@
+:root{
+  --yellow: rgb(252 217 1);
+  --orange: rgb(233 99 10);
+  --white: rgb(255 255 255);
+  --dark-purple: rgb(52 49 96);
+  --light-purple: rgb(89 86 133);
+  --dark-blue: rgb(2 15 21);
+  --light-blue: rgb(0 61 89);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html{
-  background-color: antiquewhite;
+  font-size: 62.5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--dark-blue);
 }
-body{
-  text-align: center;
+a{
+  text-decoration: none;
 }
-main{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+/* Barra de navegacion */
+header{
+  background-color: var(--light-blue);
+  height: 80px;
 }
-
-section{
+.nav__container{
   display: flex;
-  border: 2px solid black;
-  flex-direction: column;
-  margin: 10px;
-  width: 300px;
-  height: 270px;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-left: 100px;
+}
+.nav__title{
+  display: flex;
+  gap: 15px;
+}
+.nav__title a{
+  color: var(--white);
+  font-size: 2rem;
   
 }
-main section:nth-child(1){
-  justify-self: end;
+.nav__title :hover{
+  cursor: pointer;
 }
-main section:nth-child(2){
-  justify-self: start;
-}
-main section:nth-child(3){
-  justify-self: end;
-}
-main section:nth-child(4){
-  justify-self: start;
-}
-form{
+.nav__bar{
+  height: 80px;
+  width: 100%;
+  margin-right: 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+.nav__bar a{
+  font-size: 1.5rem;
+  color: var(--white);
+}
+/* main */
+main{
+  background-color: var(--dark-blue);
+  
+
+}
+.main__container{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 30px;
+  margin-top: 100px;
+
+}
+.main__title{
+  width: 500px;
+}
+.nav__title figure{
+  background-image: url(assets/logo.png);
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main__title h1{
+ font-size: 3rem;
+ color: var(--white);
+ margin-bottom: 40px;
+}
+.main__title p{
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+.main__img{
+  width: 300px;
+  height: 300px;
+  background-image: url(assets/calculating.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.flex__buttons{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+button{
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px; 
+  font-weight: bold;
+}
+button:hover{
+  cursor: pointer;
+}
+
+button:nth-child(1){
+  background-color: var(--yellow);
+}
+button:nth-child(2){
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+
