@@ -30,16 +30,26 @@ header{
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  margin-left: 100px;
+  margin-left: 20px;
 }
 .nav__title{
-  display: flex;
-  gap: 15px;
+  width: 300px;
 }
 .nav__title a{
+  display: flex;
+  align-items: center;
   color: var(--white);
   font-size: 2rem;
   
+}
+.nav__title figure{
+  background-image: url(assets/logo.png);
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
 }
 .nav__title :hover{
   cursor: pointer;
@@ -86,13 +96,14 @@ main{
   background-position: center;
   display: none;
 }
-.nav__title figure{
-  background-image: url(assets/logo.png);
-  width: 60px;
-  height: 60px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.mobile__menu figure:hover{
+  cursor: pointer;
+}
+.mobile-menu__content{
+  display: none;
+}
+.inactive{
+  display: none;
 }
 .main__title h1{
  font-size: 3rem;
@@ -190,6 +201,26 @@ button:nth-child(2){
   }
   .mobile__menu figure{
    display: block;
+  }
+  .mobile-menu__content{
+    width: 300px;
+    height: 400px;
+    background-color: var(--light-blue);
+    position: absolute;
+    right: 0;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+  .inactive{
+    display: none;
+  }
+  .mobile-menu__content div a{
+    font-size: 1.5rem;
+    color: var(--white);
   }
   .main__container{
     display: flex;
