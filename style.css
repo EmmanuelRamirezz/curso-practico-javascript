@@ -195,6 +195,54 @@ button:nth-child(2){
   font-size: 1.5rem;
   text-align: center;
 }
+/* Seccion de Figuras */
+.grid-main__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  gap: 10px;
+  color: var(--dark-blue);
+  min-width: 326px;
+}
+.grid-main__container section{
+  height: 270px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.grid-main__container section h2{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.grid-main__container label{
+  font-size: 1.3rem;
+}
+.grid-main__container input{
+  display: block;  
+  margin: 10px auto;
+}
+.cuadrado{
+  background-color: var(--orange);
+}
+
+.triangulo{
+  background-color: var(--yellow);
+}
+.circulo{
+  background-color: var(--light-purple);
+  color: var(--white);
+}
+.isoceles{
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+/* Seccion responsive */
 @media(max-width: 900px){
   .nav__bar{
     display: none;
@@ -241,6 +289,10 @@ button:nth-child(2){
     margin: 20px auto;
     height: 280px;
   }
+  .grid-main__container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 480px){
   .regular-discount__container, .cupon-discount__container{
@@ -249,6 +301,12 @@ button:nth-child(2){
   #InputPrice, #InputDiscount, #InputPrice2, #InputCupon{
     width: 150px;
     margin: 5 px;
+  }
+  .grid-main__container button{
+    padding: 0;
+  }
+  .grid-main__container input{
+    margin: 0 auto;
   }
 }
 
