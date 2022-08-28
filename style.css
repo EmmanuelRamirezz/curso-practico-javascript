@@ -268,6 +268,7 @@ display: flex;
 .mediana p{
   font-size: 1.3rem;
   margin: 10px;
+  text-align: center;
 }
 .mediana input{
   width: 100px;
@@ -276,6 +277,8 @@ display: flex;
 }
 .mediana div{
   display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 .mediana__button{
   margin: 0 auto;
@@ -303,8 +306,11 @@ display: flex;
   background-color: var(--light-blue);  
   color: var(--white);
 }
+.mediana .mediana__result{
+  font-size: 2rem;
+  text-align: center;
+}
 .mediana__container{
-  background-color: blue;
   display: flex;
   flex-direction: column;
   height: auto;

@@ -1,6 +1,12 @@
+const mobile__menu = document.querySelector('.mobile__menu');
+const mobileMenu__content = document.querySelector('.mobile-menu__content');
 
+mobile__menu.addEventListener("click", despliegue);
 
-
+function despliegue(){
+  console.log('menu de movil');
+  mobileMenu__content.classList.toggle('inactive');
+}
 
 
 const medianaResult = document.querySelector('.mediana__result');
@@ -17,7 +23,7 @@ medianaButton2.addEventListener("click", medianaCalcular)
 medianaButton3.addEventListener("click", medianaRegresar);
 
 function medianaCantidad(){
-  medianaInput.classList.add('inactive');
+  medianaInput.classList.add('inactive1');
   medianaButton.classList.add('inactive');
   medianaButton2.classList.remove('inactive');
   medianaButton3.classList.remove('inactive');
@@ -28,36 +34,38 @@ function medianaCantidad(){
 
     const input1 = document.createElement('input');
     input1.classList.add('mediana__input');
+    input1.setAttribute('type', 'number');
     input1.id=(i);
     
     medianaContainer.appendChild(input1);
   }
 }
+function median(numbers) {
+  const sorted = numbers.slice().sort((a, b) => a - b);
+  const middle = Math.floor(sorted.length / 2);
+  if (sorted.length % 2 === 0) {
+      return (sorted[middle - 1] + sorted[middle]) / 2;
+  }
+  return sorted[middle];
+}
 function medianaCalcular(){
   var arreglo = [];
   for(j=0; j<medianaInput.value; j++){
     const valor = document.getElementById(j);
-    arreglo.push(valor.value);
+    valorChido=parseFloat(valor.value);
+    arreglo.push(valorChido);
   }
-  arreglo.sort(function(a, b){return a - b}); 
-  var medio= arreglo.length/2;
-
   if(arreglo.length%2==0) {
-  console.log('par');
-  var mediaPar=(arreglo[medio-1]+arreglo[medio])/2
-  console.log("La mediana es "+ mediaPar);
+  medianaResult.innerText=("La mediana es "+ median(arreglo)+" y el total de sus numeros es par");
   }else{
-  console.log('impar');
-  var medioRound= Math.round(medio)-1;
-  console.log("La mediana es: "+ arreglo[medioRound]);
+  medianaResult.innerText=("La mediana es "+ median(arreglo)+" y el total de sus numeros es impar")
   }
-  console.log(arreglo);
 }
 function medianaRegresar(){
   medianaButton.classList.remove('inactive');
   medianaButton2.classList.add('inactive');
   medianaButton3.classList.add('inactive');
-  medianaInput.classList.remove('inactive');
+  medianaInput.classList.remove('inactive1');
   medianaText.innerText=('¿Cuantos numeros va a ingresar?');
   medianaContainer.classList.add('inactive1');
   
@@ -65,4 +73,5 @@ function medianaRegresar(){
     medianaContainer.removeChild(medianaContainer.firstElementChild);
   }
   arreglo=[]
+  medianaResult.innerText=("");
 }
