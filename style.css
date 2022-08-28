@@ -105,6 +105,9 @@ main{
 .inactive{
   display: none;
 }
+.inactive1{
+  visibility: hidden;
+}
 .main__title h1{
  font-size: 3rem;
  color: var(--white);
@@ -202,7 +205,7 @@ button:nth-child(2){
   grid-template-rows: 1fr 1fr;
   width: 80%;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 50px;
   gap: 10px;
   color: var(--dark-blue);
   min-width: 326px;
@@ -241,6 +244,74 @@ button:nth-child(2){
   background-color: var(--light-blue);
   color: var(--white);
 }
+/* Mediana */
+.mediana-main__container{
+display: flex;
+}
+.mediana{
+  margin: 0 auto;
+  background-color: var(--light-purple);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.mediana h2{
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.mediana p{
+  font-size: 1.3rem;
+  margin: 10px;
+}
+.mediana input{
+  width: 100px;
+  margin: 10px auto;
+  display: block;
+}
+.mediana div{
+  display: flex;
+}
+.mediana__button{
+  margin: 0 auto;
+  width:  100px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;  
+  background-color: var(--orange);
+  color: var(--white);
+}
+.mediana__button2{
+  margin: 0 auto;
+  width:  100px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  background-color: var(--yellow);  
+}
+.mediana__button3{
+  margin: 0 auto;
+  width:  100px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  background-color: var(--light-blue);  
+  color: var(--white);
+}
+.mediana__container{
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 90%;
+}
+
+
 
 /* Seccion responsive */
 @media(max-width: 900px){
@@ -265,6 +336,9 @@ button:nth-child(2){
   }
   .inactive{
     display: none;
+  }
+  .inactive1{
+    visibility: hidden;
   }
   .mobile-menu__content div a{
     font-size: 1.5rem;
@@ -293,6 +367,9 @@ button:nth-child(2){
     display: grid;
     grid-template-columns: 1fr;
   }
+  .mediana{
+    width: 80%;
+  }
 }
 @media (max-width: 480px){
   .regular-discount__container, .cupon-discount__container{
@@ -306,6 +383,12 @@ button:nth-child(2){
     padding: 0;
   }
   .grid-main__container input{
+    margin: 0 auto;
+  }
+  .mediana div{
+  flex-direction: column;
+  }
+  .mediana__input{
     margin: 0 auto;
   }
 }

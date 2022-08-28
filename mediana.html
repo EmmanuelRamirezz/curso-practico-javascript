@@ -4,10 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  <h1>Mediana</h1>
+  <header>
+    <nav class="nav__container">
+      <section class="nav__title">
+        
+        <a href="index.html"><figure></figure>Taller Practico JS</a>
+      </section>
+      <div class="mobile__menu"><figure></figure>
+      </div>
+      <div class="mobile-menu__content inactive">
+        <div><a href="descuentos.html">Descuentos</a></div>
+        <div><a href="figuras.html">Figuras</a></div>
+        <div><a href="mediana.html">Mediana</a></div>
+        <div><a href="moda.html">Moda</a></div>
+        <div><a href="promedio.html">Promedio</a></div>
+        <div><a href="salarios.html">Salarios</a></div>
+        <div><a href="Pponderado.html">Ponderado</a></div>
+      </div>
+
+      <section class="nav__bar">
+        <div><a href="descuentos.html">Descuentos</a></div>
+        <div><a href="figuras.html">Figuras</a></div>
+        <div><a href="mediana.html">Mediana</a></div>
+        <div><a href="moda.html">Moda</a></div>
+        <div><a href="promedio.html">Promedio</a></div>
+        <div><a href="salarios.html">Salarios</a></div>
+        <div><a href="Pponderado.html">Ponderado</a></div>
+      </section>
+    </nav>
+  </header>
+  <main>
+    <section 
+    class="mediana-main__container">
+    <div class="mediana">
+      <h2>Calculadora de la mediana de una serie de numeros</h2>
+      <div>
+        <p class="mediana__text">¿Cuantos numeros va a ingresar?</p>
+      <input type="number" class="mediana__input">
+      </div>
+      
+      <button class="mediana__button">Confirmar</button>
+      <div class="mediana__container inactive1"></div>
+      <button class="mediana__button2 inactive">Calcular</button>
+      <button class="mediana__button3 inactive">Regresar</button>
+      <p class="mediana__result"></p>
+    </div>
+    </section>
+  </main>
   <script src="mediana.js"></script>
 </body>
 </html>
