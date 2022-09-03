@@ -1,10 +1,6 @@
 const mobile__menu = document.querySelector('.mobile__menu');
 const mobileMenu__content = document.querySelector('.mobile-menu__content');
 const ponderadoLogo = document.querySelector('.ponderado__logo');
-mobile__menu.addEventListener("click", despliegue);
-
-
-
 const ponderadoResult = document.querySelector('.ponderado__result');
 const ponderadoButton = document.querySelector('.ponderado__button');
 const ponderadoButton2 = document.querySelector('.ponderado__button2');
@@ -22,6 +18,7 @@ var denominador = 0;
 var m =0
 var numerador =0;
 
+mobile__menu.addEventListener("click", despliegue);
 ponderadoButton.addEventListener("click", ponderadoCantidad);
 ponderadoButton2.addEventListener("click", ponderadoCalcular)
 ponderadoButton3.addEventListener("click", ponderadoRegresar);

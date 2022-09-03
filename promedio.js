@@ -1,24 +1,22 @@
 const mobile__menu = document.querySelector('.mobile__menu');
 const mobileMenu__content = document.querySelector('.mobile-menu__content');
-
-mobile__menu.addEventListener("click", despliegue);
-
-function despliegue(){
-  console.log('menu de movil');
-  mobileMenu__content.classList.toggle('inactive');
-}
-const promResult = document.querySelector('.prom__result');
-
 const promButton = document.querySelector('.prom__button');
 const promButton2 = document.querySelector('.prom__button2');
 const promButton3 = document.querySelector('.prom__button3');
 const promText = document.querySelector('.prom__text');
 const promInput = document.querySelector('.prom__input');
 const promContainer = document.querySelector('.prom__container');
+const promResult = document.querySelector('.prom__result');
 
+mobile__menu.addEventListener("click", despliegue);
 promButton.addEventListener("click", promCantidad);
 promButton2.addEventListener("click", promCalcular)
 promButton3.addEventListener("click", promRegresar);
+
+function despliegue(){
+  console.log('menu de movil');
+  mobileMenu__content.classList.toggle('inactive');
+}
 
 function promCantidad(){
   promInput.classList.add('inactive1');

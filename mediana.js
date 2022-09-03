@@ -1,14 +1,5 @@
 const mobile__menu = document.querySelector('.mobile__menu');
 const mobileMenu__content = document.querySelector('.mobile-menu__content');
-
-mobile__menu.addEventListener("click", despliegue);
-
-function despliegue(){
-  console.log('menu de movil');
-  mobileMenu__content.classList.toggle('inactive');
-}
-
-
 const medianaResult = document.querySelector('.mediana__result');
 const medianaButton = document.querySelector('.mediana__button');
 const medianaButton2 = document.querySelector('.mediana__button2');
@@ -21,7 +12,12 @@ const medianaContainer = document.querySelector('.mediana__container');
 medianaButton.addEventListener("click", medianaCantidad);
 medianaButton2.addEventListener("click", medianaCalcular)
 medianaButton3.addEventListener("click", medianaRegresar);
+mobile__menu.addEventListener("click", despliegue);
 
+function despliegue(){
+  console.log('menu de movil');
+  mobileMenu__content.classList.toggle('inactive');
+}
 function medianaCantidad(){
   medianaInput.classList.add('inactive1');
   medianaButton.classList.add('inactive');
