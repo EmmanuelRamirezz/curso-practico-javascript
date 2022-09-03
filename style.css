@@ -39,8 +39,10 @@ header{
 .nav__title a{
   display: flex;
   align-items: center;
+  text-align: center;
   color: var(--white);
   font-size: 2rem;
+  margin-right: 50px;
   
 }
 .nav__title figure{
@@ -79,7 +81,7 @@ main{
   width: 80%;
   margin: 0 auto;
   gap: 30px;
-  margin-top: 100px;
+  margin-top: 20px;
 
 }
 .main__title{
@@ -102,6 +104,7 @@ main{
 }
 .mobile-menu__content{
   display: none;
+  
 }
 .inactive{
   display: none;
@@ -120,12 +123,18 @@ main{
   margin-bottom: 40px;
 }
 .main__img{
-  width: 300px;
-  height: 300px;
+  display: flex;
+  justify-content: center;
+  height: 266px;
+  width: 500px;
+}
+.main__img figure{
   background-image: url(assets/calculating.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 200px;
+  height: 200px;
 }
 .flex__buttons{
   display: flex;
@@ -148,6 +157,55 @@ button:nth-child(1){
 button:nth-child(2){
   background-color: var(--orange);
   color: var(--white);
+}
+.technologies__container{
+  display: flex;
+  gap: 200px;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 50px;
+} 
+.technologies__container ul{
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: var(--white);
+}
+.technologies__container div{
+  display: flex;
+  flex-direction: column;
+}
+.css{
+
+}
+
+.html figure{
+  background-image: url(assets/html.png);
+  width: 125px;
+  height: 125px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.css figure{
+  background-image: url(assets/css-3.png);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 13px;
+  margin-bottom: 15px;
+}
+.js figure{
+  background-image: url(assets/js.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 13px;
+  margin-bottom: 15px;
 }
 /* Seccion de descuentos */
 .main-discount__container h1{
@@ -358,166 +416,189 @@ display: flex;
 /* Promedio */
 .prom-main__container{
   display: flex;
-  }
-  .prom{
-    margin: 0 auto;
-    background-color: var(--regular-blue);
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    color: var(--white);
-    width: 40%;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  .prom h2{
-    font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  .prom p{
-    font-size: 1.3rem;
-    margin: 10px;
-    text-align: center;
-  }
-  .prom input{
+}
+.prom{
+  margin: 0 auto;
+  background-color: var(--regular-blue);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.prom h2{
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.prom p{
+  font-size: 1.3rem;
+  margin: 10px;
+  text-align: center;
+}
+.prom input{
     width: 100px;
     margin: 10px auto;
     display: block;
   }
-  .prom div{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .prom__button{
-    margin: 0 auto;
-    width:  100px;
-    text-align: center;
-    padding: 0;
-    margin-top: 10px;  
-    background-color: var(--orange);
-    color: var(--white);
-  }
-  .prom__button2{
-    margin: 0 auto;
-    width:  100px;
-    text-align: center;
-    padding: 0;
-    margin-top: 10px;
-    background-color: var(--yellow);  
-  }
-  .prom__button3{
-    margin: 0 auto;
-    width:  100px;
-    text-align: center;
-    padding: 0;
-    margin-top: 10px;
-    background-color: var(--light-blue);  
-    color: var(--white);
-  }
-  .prom .prom__result{
-    font-size: 2rem;
-    text-align: center;
-  }
-  .prom__container{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 90%;
-  }
+.prom div{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.prom__button{
+  margin: 0 auto;
+  width:  100px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;  
+  background-color: var(--orange);
+  color: var(--white);
+}
+.prom__button2{
+  margin: 0 auto;
+  width:  100px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  background-color: var(--yellow);  
+}
+.prom__button3{
+  margin: 0 auto;
+  width:  100px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  background-color: var(--light-blue);  
+  color: var(--white);
+}
+.prom .prom__result{
+  font-size: 2rem;
+  text-align: center;
+}
+.prom__container{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 90%;
+}
   /* Promedio Ponderado */
-  .ponderado-main__container{
-    display: flex;
-    }
-    .ponderado{
-      margin: 0 auto;
-      background-color: var(--dark-purple);
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      color: var(--white);
-      width: 60%;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .ponderado__logo{
-      background-image: url(assets/interrogation.png);
-      margin-right: 10px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-left: 99%;
-      padding: 0;
-      height: 20px;
-      width: 20px;
-    }
-    .ponderado__logo{
-      cursor: pointer;
-    }
-    .ponderado h2{
-      font-weight: bold;
-      font-size: 2rem;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-    .ponderado p{
-      font-size: 1.3rem;
-      margin: 10px;
-      text-align: center;
-    }
-    .ponderado input{
-      width: 100px;
-      margin: 10px auto;
-      display: block;
-    }
-    .ponderado__button{
-      margin: 0 auto;
-      width:  100px;
-      text-align: center;
-      padding: 0;
-      margin-top: 10px;  
-      background-color: var(--orange);
-      color: var(--white);
-    }
-    .ponderado__button2{
-      margin: 0 auto;
-      width:  100px;
-      text-align: center;
-      padding: 0;
-      margin-top: 10px;
-      background-color: var(--yellow);  
-    }
-    .ponderado__button3{
-      margin: 0 auto;
-      width:  100px;
-      text-align: center;
-      padding: 0;
-      margin-top: 10px;
-      background-color: var(--light-blue);  
-      color: var(--white);
-    }
+.ponderado-main__container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ponderado-info__container{
+  margin: 0 auto;
+  width: 50%;
+  background-color: var(--yellow);
+  padding: 20px;
+  border-radius: 10px;
+}
+.ponderado-info__container p{
+  font-size: 1.3rem;
+}
+.ponderado-info__container figure{
+  background-image: url(assets/Formula.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 320px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.ponderado{
+  margin: 0 auto;
+  background-color: var(--dark-purple);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.ponderado__logo{
+  background-image: url(assets/interrogation.png);
+  margin-right: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 99%;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+}
+.ponderado__logo{
+  cursor: pointer;
+}
+.ponderado h2{
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.ponderado p{
+  font-size: 1.3rem;
+  margin: 10px;
+  text-align: center;
+}
+.ponderado input{
+  width: 100px;
+  margin: 10px auto;
+  display: block;
+}
+.ponderado__button{
+  margin: 0 auto;
+  width:  100px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;  
+  background-color: var(--orange);
+  color: var(--white);
+}
+.ponderado__button2{
+  margin: 0 auto;
+  width:  100px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  background-color: var(--yellow);  
+}
+.ponderado__button3{
+  margin: 0 auto;
+  width:  100px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+   background-color: var(--light-blue);  
+  color: var(--white);
+}
     .ponderado .ponderado__result{
-      font-size: 2rem;
-      text-align: center;
-    }
-    .ponderado__container{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin: 0 auto;
-      height: auto;
-      width: 90%;
-      background-color: var(--dark-blue);
-      padding: 10px;
-    }
-    .ponderadoDiv{
-      background-color: var(--light-blue);
-      border: 1px solid black;
-      width: 90%;
-      margin: 0 auto;
-    }
+  font-size: 2rem;
+  text-align: center;
+}
+.ponderado__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0 auto;
+  height: auto;
+  width: 90%;
+  background-color: var(--dark-blue);
+  padding: 10px;
+}
+.ponderadoDiv{
+  background-color: var(--light-blue);
+  border: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
+}
 /* Seccion responsive */
 @media(max-width: 900px){
   .nav__bar{
@@ -564,6 +645,15 @@ display: flex;
   .nav__container{
     margin-left: 20px;
   }
+  .technologies__container{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .technologies__container div{
+    width: 40%;
+    margin: 0 auto;
+    
+  }
   .regular-discount__container, .cupon-discount__container{
     margin: 20px auto;
     height: 280px;
@@ -584,8 +674,18 @@ display: flex;
   .ponderado{
     width: 80%;
   }
+  .ponderado-info__container{
+    width: 60%;
+  }
+  .ponderado-info__container figure{
+    width: 250px;
+    height: 40px;
+  }
 }
 @media (max-width: 480px){
+  .technologies__container{
+    width: 80%;
+  }
   .regular-discount__container, .cupon-discount__container{
     height: 300px;
   }
@@ -623,6 +723,13 @@ display: flex;
   }
   .ponderado__container{
     grid-template-columns: 1fr;
+  }
+  .ponderado-info__container{
+    width: 80%;
+  }
+  .ponderado-info__container figure{
+    width: 200px;
+    height: 33px;
   }
 }
 

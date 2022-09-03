@@ -12,6 +12,8 @@ const ponderadoButton3 = document.querySelector('.ponderado__button3');
 const ponderadoText = document.querySelector('.ponderado__text');
 const ponderadoInput = document.querySelector('.ponderado__input');
 const ponderadoContainer = document.querySelector('.ponderado__container');
+const ponderadoInfoButton = document.querySelector('.ponderado__logo');
+const ponderandoInfoContainer = document.querySelector('.ponderado-info__container');
 var arreglo = [];
 var arreglo2=[];
 var arreglo3=[];
@@ -23,12 +25,16 @@ var numerador =0;
 ponderadoButton.addEventListener("click", ponderadoCantidad);
 ponderadoButton2.addEventListener("click", ponderadoCalcular)
 ponderadoButton3.addEventListener("click", ponderadoRegresar);
+ponderadoInfoButton.addEventListener("click", ponderacionInfo)
 
 function despliegue(){
   console.log('menu de movil');
   mobileMenu__content.classList.toggle('inactive');
   ponderadoLogo.classList.toggle('inactive');
 
+}
+function ponderacionInfo(){
+  ponderandoInfoContainer.classList.toggle('inactive');
 }
 function ponderadoCantidad(){
   ponderadoInput.classList.add('inactive1');
