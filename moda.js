@@ -1,9 +1,17 @@
+const mobile__menu = document.querySelector('.mobile__menu');
+const mobileMenu__content = document.querySelector('.mobile-menu__content');
+mobile__menu.addEventListener("click", despliegue);
+
 const  modaInput =  document.querySelector('.moda__input');
 const  modaButton =  document.querySelector('.moda__button');
 const modaResult = document.querySelector('.moda__result');
 
 modaButton.addEventListener('click', modaCalculo);
 
+function despliegue(){
+  console.log('menu de movil');
+  mobileMenu__content.classList.toggle('inactive');
+}
 function modaCalculo(){
   var modaValue=modaInput.value;
   var modaArray =modaValue.split(',');

@@ -427,6 +427,97 @@ display: flex;
     height: auto;
     width: 90%;
   }
+  /* Promedio Ponderado */
+  .ponderado-main__container{
+    display: flex;
+    }
+    .ponderado{
+      margin: 0 auto;
+      background-color: var(--dark-purple);
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      color: var(--white);
+      width: 60%;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .ponderado__logo{
+      background-image: url(assets/interrogation.png);
+      margin-right: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 99%;
+      padding: 0;
+      height: 20px;
+      width: 20px;
+    }
+    .ponderado__logo{
+      cursor: pointer;
+    }
+    .ponderado h2{
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .ponderado p{
+      font-size: 1.3rem;
+      margin: 10px;
+      text-align: center;
+    }
+    .ponderado input{
+      width: 100px;
+      margin: 10px auto;
+      display: block;
+    }
+    .ponderado__button{
+      margin: 0 auto;
+      width:  100px;
+      text-align: center;
+      padding: 0;
+      margin-top: 10px;  
+      background-color: var(--orange);
+      color: var(--white);
+    }
+    .ponderado__button2{
+      margin: 0 auto;
+      width:  100px;
+      text-align: center;
+      padding: 0;
+      margin-top: 10px;
+      background-color: var(--yellow);  
+    }
+    .ponderado__button3{
+      margin: 0 auto;
+      width:  100px;
+      text-align: center;
+      padding: 0;
+      margin-top: 10px;
+      background-color: var(--light-blue);  
+      color: var(--white);
+    }
+    .ponderado .ponderado__result{
+      font-size: 2rem;
+      text-align: center;
+    }
+    .ponderado__container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 0 auto;
+      height: auto;
+      width: 90%;
+      background-color: var(--dark-blue);
+      padding: 10px;
+    }
+    .ponderadoDiv{
+      background-color: var(--light-blue);
+      border: 1px solid black;
+      width: 90%;
+      margin: 0 auto;
+    }
 /* Seccion responsive */
 @media(max-width: 900px){
   .nav__bar{
@@ -490,6 +581,9 @@ display: flex;
   .prom{
     width: 80%;
   }
+  .ponderado{
+    width: 80%;
+  }
 }
 @media (max-width: 480px){
   .regular-discount__container, .cupon-discount__container{
@@ -520,6 +614,15 @@ display: flex;
   }
   .prom__input{
     margin: 0 auto;
+  }
+  .ponderado div{
+    flex-direction: column;
+  }
+  .ponderado__input{
+    margin: 0 auto;
+  }
+  .ponderado__container{
+    grid-template-columns: 1fr;
   }
 }
 
