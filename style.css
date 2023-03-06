@@ -141,6 +141,10 @@ main{
   justify-content: center;
   gap: 40px;
 }
+.flex__buttons a{
+  color: var(--dark-blue);
+}
+
 button{
   height: 40px;
   padding: 0 20px;
